@@ -1,0 +1,11 @@
+
+/__pycache__
+/data
+/etc
+/Include
+/Lib
+/Scripts
+/etc
+/share
+
+*.cfg
