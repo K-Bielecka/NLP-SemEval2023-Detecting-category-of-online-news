@@ -25,8 +25,10 @@ def words_per_sample(list_of_texts: list):
 def plot_sample_length_distr(sample_texts):
     """Plots the sample length distribution.
     """
-    plt.hist([len(s) for s in sample_texts], 50)
-    plt.xlabel('Length of a sample')
+
+    num_words = [len(s.split()) for s in sample_texts]
+    plt.hist(num_words, 50)
+    plt.xlabel('Length of a sample [words]nump')
     plt.ylabel('Number of samples')
     plt.title('Sample length distribution')
     plt.show()
